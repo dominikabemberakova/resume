@@ -52,17 +52,19 @@ const AnimatedBackground = ({ count = 50 }) => {
   const dots = useRef(generateDots(count));
 
   return (
-    <Background>
-      {dots.current.map((dot) => (
-        <Dot
-          key={dot.id}
-          top={dot.top}
-          left={dot.left}
-          delay={dot.delay}
-          color={dot.color}
-        />
-      ))}
-    </Background>
+    <div id="background">
+      <Background>
+        {dots.current.map((dot) => (
+          <Dot
+            key={dot.id}
+            top={dot.top}
+            left={dot.left}
+            delay={dot.delay}
+            color={dot.color}
+          />
+        ))}
+      </Background>
+    </div>
   );
 };
 
