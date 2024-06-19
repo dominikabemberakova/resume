@@ -38,7 +38,6 @@ export default async function Home() {
       <Projects />
       <ContactSection />
       <AnimatedBackground />
-     
     </>
   )
 };
